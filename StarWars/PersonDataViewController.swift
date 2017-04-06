@@ -58,8 +58,6 @@ class PersonDataViewController: UIViewController {
         massLabel.text = person.mass
         birthYearLabel.text = person.birthYear
         genderLabel.text = person.gender
-        //        homeWorldLabel.text = person.homeworld
-        // speciesLabel.text = person.species
     }
     
 }
