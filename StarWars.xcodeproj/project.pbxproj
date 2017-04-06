@@ -12,6 +12,10 @@
 		3EC0BBAF1E951B75008D29B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EC0BBAD1E951B75008D29B3 /* Main.storyboard */; };
 		3EC0BBB11E951B75008D29B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EC0BBB01E951B75008D29B3 /* Assets.xcassets */; };
 		3EC0BBB41E951B75008D29B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EC0BBB21E951B75008D29B3 /* LaunchScreen.storyboard */; };
+		3EF603881E95244B00BC808F /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF603871E95244B00BC808F /* Characters.swift */; };
+		3EFDB0361E954DC9005C2B24 /* PersonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFDB0351E954DC9005C2B24 /* PersonData.swift */; };
+		3EFDB0381E9550EC005C2B24 /* PersonDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFDB0371E9550EC005C2B24 /* PersonDataViewController.swift */; };
+		84FDB62EE63B2B0AD705FE73 /* Pods_StarWars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43B8C01444D6F7A072720903 /* Pods_StarWars.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,12 @@
 		3EC0BBB01E951B75008D29B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3EC0BBB31E951B75008D29B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3EC0BBB51E951B75008D29B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EF603871E95244B00BC808F /* Characters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Characters.swift; sourceTree = "<group>"; };
+		3EFDB0351E954DC9005C2B24 /* PersonData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonData.swift; sourceTree = "<group>"; };
+		3EFDB0371E9550EC005C2B24 /* PersonDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDataViewController.swift; sourceTree = "<group>"; };
+		43B8C01444D6F7A072720903 /* Pods_StarWars.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarWars.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D51A0EDBCB4854DB5C8E114 /* Pods-StarWars.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWars.release.xcconfig"; path = "Pods/Target Support Files/Pods-StarWars/Pods-StarWars.release.xcconfig"; sourceTree = "<group>"; };
+		9269401C0565CED163128146 /* Pods-StarWars.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWars.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StarWars/Pods-StarWars.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84FDB62EE63B2B0AD705FE73 /* Pods_StarWars.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,8 @@
 			children = (
 				3EC0BBA81E951B75008D29B3 /* StarWars */,
 				3EC0BBA71E951B75008D29B3 /* Products */,
+				8B0EA3F052DF9603C6EC1D31 /* Pods */,
+				4B9DA12AC6F06D676543DD1E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +68,33 @@
 			isa = PBXGroup;
 			children = (
 				3EC0BBA91E951B75008D29B3 /* AppDelegate.swift */,
+				3EF603871E95244B00BC808F /* Characters.swift */,
+				3EFDB0351E954DC9005C2B24 /* PersonData.swift */,
 				3EC0BBAB1E951B75008D29B3 /* ViewController.swift */,
 				3EC0BBAD1E951B75008D29B3 /* Main.storyboard */,
+				3EFDB0371E9550EC005C2B24 /* PersonDataViewController.swift */,
 				3EC0BBB01E951B75008D29B3 /* Assets.xcassets */,
 				3EC0BBB21E951B75008D29B3 /* LaunchScreen.storyboard */,
 				3EC0BBB51E951B75008D29B3 /* Info.plist */,
 			);
 			path = StarWars;
+			sourceTree = "<group>";
+		};
+		4B9DA12AC6F06D676543DD1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43B8C01444D6F7A072720903 /* Pods_StarWars.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B0EA3F052DF9603C6EC1D31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9269401C0565CED163128146 /* Pods-StarWars.debug.xcconfig */,
+				6D51A0EDBCB4854DB5C8E114 /* Pods-StarWars.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3EC0BBB81E951B75008D29B3 /* Build configuration list for PBXNativeTarget "StarWars" */;
 			buildPhases = (
+				81C49641539BFA3C5B47B3BE /* [CP] Check Pods Manifest.lock */,
 				3EC0BBA21E951B75008D29B3 /* Sources */,
 				3EC0BBA31E951B75008D29B3 /* Frameworks */,
 				3EC0BBA41E951B75008D29B3 /* Resources */,
+				5D6A0875DAC767C3F5F243CB /* [CP] Embed Pods Frameworks */,
+				92CD1F78A351EAEE0E78C209 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,13 +168,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5D6A0875DAC767C3F5F243CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StarWars/Pods-StarWars-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81C49641539BFA3C5B47B3BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		92CD1F78A351EAEE0E78C209 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StarWars/Pods-StarWars-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3EC0BBA21E951B75008D29B3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EFDB0361E954DC9005C2B24 /* PersonData.swift in Sources */,
+				3EF603881E95244B00BC808F /* Characters.swift in Sources */,
 				3EC0BBAC1E951B75008D29B3 /* ViewController.swift in Sources */,
 				3EC0BBAA1E951B75008D29B3 /* AppDelegate.swift in Sources */,
+				3EFDB0381E9550EC005C2B24 /* PersonDataViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +348,7 @@
 		};
 		3EC0BBB91E951B75008D29B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9269401C0565CED163128146 /* Pods-StarWars.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9937BJYLPH;
@@ -274,6 +362,7 @@
 		};
 		3EC0BBBA1E951B75008D29B3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D51A0EDBCB4854DB5C8E114 /* Pods-StarWars.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9937BJYLPH;
@@ -304,6 +393,7 @@
 				3EC0BBBA1E951B75008D29B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
